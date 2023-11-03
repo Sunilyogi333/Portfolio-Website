@@ -16,6 +16,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    /* background-color: #f0f0f0; */
     background-color: #191919;
     /* background-color: #333333; */
     display: flex;
@@ -48,6 +49,7 @@
 }
 
 .main {
+    /* background-color: #f0f0f0; */
     background-color: #191919;
     /* background-color: #333333; */
     padding-top: 95px;
@@ -95,7 +97,7 @@
 } */
 .overview {
     font-family: 'Open Sans', sans-serif;
-    font-size: 50px;
+    font-size: 30px;
     /* margin-bottom: 25px */
     /* font-family: 'Roboto', sans-serif; */
     /* color: #555;  */
@@ -112,8 +114,7 @@
 }
 .social-media{
     display:flex;
-    padding-top: 100px;
-    padding-bottom: 20px;
+    padding-top: 120px;
 }
 .social-media p{
     font-size: 25px;
@@ -149,7 +150,6 @@
     border: 2px solid #faebd7;
     color: #faebd7;
 }
-
 
 .contactform {
     padding: 0 35px;
@@ -326,6 +326,7 @@
     transform: scale(1.02); /* Slight zoom on hover */
 }
 
+
 #dear-dairy{
     width: 450px;
 }
@@ -354,6 +355,12 @@
     display: flex;
     justify-content: center;
     width: 500px;
+}
+.contact-icons i{
+    padding: 0px 10px;
+    color: #ffffff;
+    padding-top: 50px;
+    display:inline-flex;
 }
 .contact-container{
     display: flex;
