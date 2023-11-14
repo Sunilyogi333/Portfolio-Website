@@ -16,8 +16,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    /* background-color: #f0f0f0; */
-    background-color: #191919;
+    background-color: #f0f0f0;
+    /* background-color: #191919; */
     /* background-color: #333333; */
     display: flex;
     justify-content: space-between;
@@ -50,6 +50,7 @@
 
 .main {
     /* background-color: #f0f0f0; */
+    background-color: #f0f0f0;
     background-color: #191919;
     /* background-color: #333333; */
     padding-top: 95px;
