@@ -585,3 +585,13 @@
     text-align: center;
     height: auto;
 }
+
+@media(max-width: 858px ){
+
+    .social-media{
+        padding-top: 0px;
+    }
+    .infocontainer{
+        height: 100vh;
+    }
+}
