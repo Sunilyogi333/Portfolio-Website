@@ -7,22 +7,27 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.navbar {
-    width: 100vw;
+.container{
+    overflow-x: hidden;
 }
-
+.navbar{
+    overflow-x:hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
 .header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     background-color: #191919;
-    /* background-color: #333333; */
+    /* background-color: #533030; */
     display: flex;
     justify-content: space-between;
     z-index: 100;
-    padding: 30px 10%;
+    padding: 18px 10%;
+    align-items: center;
 }
 
 .PortfolioLogo {
@@ -32,12 +37,18 @@
     color: white;
 }
 
-.nav {
+.navigation-links{
+    display:flex;
     font-size: 30px;
+    gap: 2rem;
 }
 
-.navbar ul {
-    display: flex;
+.mobile-nav-toggle{
+    display: none;
+}
+
+.cross{
+    display: none;
 }
 
 .navbar nav li {
@@ -45,16 +56,18 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.navbar nav li a {
+.nav-link{
     color: #ffffff;
     font-weight: 500;
     text-decoration: none;
     padding: 0px 20px;
 }
+.opened{
+    color: #f9004d;
+}
 .main {
     background-color: #191919;
     /* background-color: #333333; */
-    padding-top: 95px;
     font-family: 'Ubuntu', sans-serif;
     width: 100%;
     height: 100%;
@@ -68,7 +81,7 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 80vh;
+    height: 88vh;
     overflow: hidden;
     /* background-color: pink; */
 }
@@ -498,8 +511,14 @@
 
 .contact-icons {
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 500px;
+}
+.contact-icons a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 30px 15px;
 }
 
 .contact-container {
@@ -580,18 +599,85 @@
     /* background-color: #232323; */
     background-color: #191919;
     /* background-color: #333333; */
-    padding: 35px 0px;
+    padding: 50px 0px;
     color: #ffffff;
     text-align: center;
-    height: auto;
+    height: 200px;
 }
 
-@media(max-width: 858px ){
+@media(max-width: 62em ){
+
+    .navigation-links{
+        background-color: #333333;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        max-width: 300px;
+        padding: min(30vh, 10rem) 1em;
+        flex-direction: column;
+        height: 100vh;
+        z-index: 1000;
+        right: -100%;
+        /* transform: translateX(100%); */
+        transition: all 0.4s linear;
+        /* opacity: 0;
+        pointer-events: none;
+        visibility: hidden; */
+    }
+    .name{
+        font-size: 50px;
+    }
+    .hello{
+        font-size: 30px;
+    }
+    .overview{
+        font-size: 30px;
+    }
+    .mobile-nav-toggle{
+        cursor: pointer;
+        display: block;
+        z-index: 9999;
+    }
+    #download-btn{
+        margin-bottom: 20px;
+    }
+
+    .active .navigation-links{
+        right: 0;
+        /* transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto; */
+    }
+
+    .active .mobile-nav-toggle .cross{
+        display: block;
+    }
+
+    .active .mobile-nav-toggle .bar{
+        display: none;
+    }
 
     .social-media{
         padding-top: 0px;
     }
     .infocontainer{
         height: 100vh;
+    }
+    .about-me img {
+        height: 300px;
+        /* width: 430px; */
+    }
+    #dear-dairy {
+        width: 300px;
+    }
+
+    .comming-soon {
+        width: 300px;
+    }
+
+    .contact-info{
+        width: 400px;
     }
 }

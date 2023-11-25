@@ -7,26 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunil Nath-Portfolio website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/5a78363638.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="navbar">
-            <header class=" header">
-                <a class="PortfolioLogo" href="#">Portfolio</a>
+            <header class="header">
+                <div>
+                    <a class="PortfolioLogo" href="#">Portfolio</a>
+                </div>
                 <nav class="nav">
-                    <ul>
-                        <li><a href="Home.html">Home</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="Porfolio.html">Projects</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
+                    <ul class="navigation-links">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="Blogs.html" class="nav-link">Blogs</a></li>
                     </ul>
                 </nav>
+                <div class="mobile-nav-toggle">
+                    <span class="bar"><i class="fa-solid fa-bars fa-2xl" style="color: #fcfcfd;"></i></span>
+                    <span class="cross"><i class="fa-solid fa-x fa-2xl" style="color: #fbfcfe;"></i></span>
+                </div>
             </header>
         </div>
         <div class="main">
-            <section class="infocontainer">
+            <section class="infocontainer" id="home">
                 <div class="myinfo">
                     <p class="hello">Hello, It'me</p>
                     <h2 class="name">Sunil Nath</h2>
@@ -62,7 +70,7 @@
                     <img class="MyImage" src="Sunil_Nath.png" alt="Sunil Nath">
                 </div> -->
             </section>
-            <section class="about">
+            <section class="about section" id="about">
                 <div class="about-me">
                     <img src="sny.jpg" alt="Sunil's Photo">
                     <div class="about-text">
@@ -83,7 +91,7 @@
                     </div>
                 </div>
             </section>
-            <section class="projects">
+            <section class="projects section" id="projects">
                 <div class="projects-section">
                     <h2>Latest Projects</h2>
                     <div class="projects-container">
@@ -131,7 +139,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact section" id="contact">
                 <div class="contact-section">
                     <h2>Contact</h2>
                     <div class="contact-container">
@@ -169,11 +177,10 @@
     <footer>
         <div class="footer">
             <div class="footer-text">
-                <p>© 2022 Created & Designed by Sunil nath.</p>
+                <p>© 2022 Created & Designed by Sunil Nath.</p>
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 
 </html>
