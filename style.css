@@ -399,7 +399,8 @@ html{
 }
 
 .about-text {
-    width: 500px;
+    width: 800px;
+    padding: 0px 20px;
 }
 
 .about-text h2 {
@@ -679,5 +680,12 @@ html{
 
     .contact-info{
         width: 400px;
+    }
+    .infocontainer{
+        height: 100vh;
+    }
+    .myinfo{
+        width: 80%;
+        padding-top: 0px;
     }
 }
